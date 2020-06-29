@@ -62,7 +62,7 @@ LEFT JOIN [Post] AS [p] ON [b].[BlogId] = [p].[BlogId]
 ORDER BY [b].[BlogId], [p].[PostId]
 ```
 
-If a typical blog has multiple related posts, rows for these posts will duplicate the blog's information, leading to the so-called "cartesian explosion" problem. As more one-to-many relationships are loaded, the amount of duplicated day may grow and adversely affect the performance of your application.
+If a typical blog has multiple related posts, rows for these posts will duplicate the blog's information, leading to the so-called "cartesian explosion" problem. As more one-to-many relationships are loaded, the amount of duplicated data may grow and adversely affect the performance of your application.
 
 EF allows you to specify that a given LINQ query should be *split* into multiple SQL queries. Instead of JOINs, split queries perform an additional SQL queries for each included one-to-many navigation:
 
