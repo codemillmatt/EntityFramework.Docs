@@ -18,10 +18,15 @@
             </CollectionView.ItemTemplate>
 
             <CollectionView.EmptyView>
-                <StackLayout>
-                    <Label VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"
-                           Text="No posts for this blog"/>
-                </StackLayout>
+                <Grid BackgroundColor="Brown">
+                    <Image Source="cat.gif" IsAnimationPlaying="True" Aspect="Fill" Grid.Row="0"/>
+
+                    <Label Grid.Row="0"
+                        Text="No posts yet!" FontFamily="ranchers" FontSize="64" TextColor="White"
+                           HorizontalTextAlignment="Center" VerticalTextAlignment="Center">                        
+                    </Label>
+                                        
+                </Grid>                                    
             </CollectionView.EmptyView>
 
         </CollectionView>

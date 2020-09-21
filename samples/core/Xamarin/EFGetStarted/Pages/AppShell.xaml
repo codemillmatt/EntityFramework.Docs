@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:EFGetStarted"
+       x:Class="EFGetStarted.AppShell"
+       FlyoutHeaderBehavior="Fixed">
+        
+    <FlyoutItem Title="All Blogs">
+        <local:BlogsPage />
+    </FlyoutItem>
+    <FlyoutItem Title="Add Blog">
+        <local:AddBlogPage/>
+    </FlyoutItem>
+
+    <MenuItem Text="Delete All Blogs" Clicked="DeleteMenuItem_Clicked"/>
+
+    <Shell.FlyoutHeader>
+        <Grid BackgroundColor="Black" HeightRequest="186">            
+            <Image Source="dotnetdocs"/>
+        </Grid>
+    </Shell.FlyoutHeader>
+
+    <Shell.BackgroundColor>#9c7bff</Shell.BackgroundColor>
+    <Shell.TitleColor>#ffffff</Shell.TitleColor>    
+    <Shell.ForegroundColor>#ffffff</Shell.ForegroundColor>
+
+    <Shell.FlyoutBackdrop>
+        <LinearGradientBrush StartPoint="1,0" EndPoint="1,1">
+            <GradientStop Color="Red" Offset="0"/>
+            <GradientStop Color="Blue" Offset="0.5"/>
+        </LinearGradientBrush>
+    </Shell.FlyoutBackdrop>
+    
+</Shell>

@@ -23,12 +23,15 @@ namespace EFGetStarted
                 await blogContext.SaveChangesAsync();
             }
 
-            await Navigation.PopModalAsync();
+            //await Navigation.PopModalAsync();
+
+            await Shell.Current.GoToAsync("..");
         }
 
         async void Cancel_Clicked(System.Object sender, System.EventArgs e)
         {
-            await Navigation.PopModalAsync();
+            //await Navigation.PopModalAsync();
+            await Shell.Current.GoToAsync("..");
         }
     }
 }

@@ -13,8 +13,13 @@
                 <TableSection Title="Post Body">
                     <ViewCell>
                         <StackLayout Padding="10">
-                            <Editor x:Name="postCell" HeightRequest="250"
+                            <Expander>
+                                <Expander.Header>
+                                    <Label Text="Post Body" FontAttributes="Bold"></Label>
+                                </Expander.Header>
+                                <Editor x:Name="postCell" HeightRequest="250"
                                     Placeholder="Enter the body of the post here"/>
+                            </Expander>                            
                         </StackLayout>
                         
                     </ViewCell>

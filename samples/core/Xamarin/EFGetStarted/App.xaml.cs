@@ -9,8 +9,9 @@ namespace EFGetStarted
         public App()
         {
             InitializeComponent();
-            
-            MainPage = new NavigationPage(new BlogsPage());
+
+            //MainPage = new NavigationPage(new BlogsPage());
+            MainPage = new AppShell();
         }
 
         protected override void OnStart()

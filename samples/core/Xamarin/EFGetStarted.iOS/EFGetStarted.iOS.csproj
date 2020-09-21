@@ -115,6 +115,9 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\dotnetdocs.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\dotnetdocs.imageset\dotnetdocs.png" />
+    <ImageAsset Include="Assets.xcassets\cat.imageset\Contents.json" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -143,5 +146,12 @@
       <Project>{E5DCDF9D-4AF4-4570-A9B6-D7C78DB2096F}</Project>
       <Name>EFGetStarted</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets.xcassets\dotnetdocs.imageset\" />
+    <Folder Include="Assets.xcassets\cat.imageset\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\cat.gif" />
   </ItemGroup>
 </Project>

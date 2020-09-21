@@ -6,7 +6,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:local="clr-namespace:EFGetStarted"
     mc:Ignorable="d"
-    x:Class="EFGetStarted.BlogsPage"
+    x:Class="EFGetStarted.BlogsPage"    
     Title="Blogs">
 
     <d:ContentPage.BindingContext>
@@ -21,7 +21,7 @@
                 <DataTemplate>                    
                     <StackLayout Padding="10">
                         <Frame HasShadow="False" BorderColor="Black" CornerRadius="5">
-                            <Label Text="{Binding Url}"/>
+                            <Label Text="{Binding Url}" FontFamily="ranchers"/>
                         </Frame>
                     </StackLayout>                  
                 </DataTemplate>
